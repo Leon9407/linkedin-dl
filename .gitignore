@@ -1,0 +1,27 @@
+# Credentials & sessions — NEVER commit these
+linkedin_cookies.txt
+cookies.txt
+*.cookies
+edge-profile/
+.linkedin_edge_profile/
+*/edge-profile/
+
+# Downloaded media
+downloads/
+linkedin-videos/
+*.mp4
+*.webm
+*.mkv
+*.m4a
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
