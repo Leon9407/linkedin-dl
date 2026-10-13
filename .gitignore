@@ -25,3 +25,6 @@ venv/
 Thumbs.db
 .vscode/
 .idea/
+
+# Build helpers (not part of the shipped tool)
+assets/render_*.py

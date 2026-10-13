@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width:1280px; height:440px; overflow:hidden;
+    font-family:'Inter',sans-serif; background:#0d1117; color:#e6edf3; position:relative;
+  }
+  .glow { position:absolute; width:700px; height:700px; border-radius:50%;
+    background:radial-gradient(circle, rgba(10,102,194,0.3) 0%, rgba(10,102,194,0) 70%);
+    top:-320px; right:-180px; filter:blur(20px); }
+  .glow2 { position:absolute; width:520px; height:520px; border-radius:50%;
+    background:radial-gradient(circle, rgba(46,160,67,0.16) 0%, rgba(46,160,67,0) 70%);
+    bottom:-300px; left:-160px; filter:blur(20px); }
+  .wrap { position:relative; z-index:2; height:100%; display:flex; align-items:center; padding:0 70px; gap:60px; }
+  .left { flex:1; }
+  .badge { display:inline-flex; align-items:center; gap:10px;
+    background:rgba(46,160,67,0.14); border:1px solid rgba(46,160,67,0.5); color:#56d364;
+    padding:8px 16px; border-radius:999px; font-size:17px; font-weight:600; }
+  .dot { width:9px; height:9px; border-radius:50%; background:#56d364; box-shadow:0 0 10px #56d364; }
+  .title { font-family:'JetBrains Mono',monospace; font-weight:800; font-size:88px; line-height:1; margin-top:22px; letter-spacing:-2px; }
+  .title .accent { color:#4493f8; }
+  .cur { display:inline-block; width:10px; height:72px; background:#4493f8; margin-left:8px; vertical-align:-10px; }
+  .tag { font-size:27px; font-weight:700; margin-top:22px; color:#f0f6fc; }
+  .tag .hl { color:#4493f8; }
+  .sub { font-size:18px; color:#8b949e; margin-top:12px; line-height:1.5; }
+  .right { width:470px; }
+  .terminal { background:#010409; border:1px solid #30363d; border-radius:12px; box-shadow:0 20px 50px rgba(0,0,0,0.5); overflow:hidden; }
+  .tbar { background:#161b22; padding:11px 16px; display:flex; align-items:center; gap:8px; border-bottom:1px solid #30363d; }
+  .tb { width:11px; height:11px; border-radius:50%; } .tb.r{background:#ff5f56;} .tb.y{background:#ffbd2e;} .tb.g{background:#27c93f;}
+  .tt { color:#6e7681; font-size:14px; font-family:'JetBrains Mono',monospace; margin-left:10px; }
+  .tbody { padding:18px 20px; font-family:'JetBrains Mono',monospace; font-size:15.5px; line-height:1.7; }
+  .p{color:#56d364;} .c{color:#e6edf3;} .f{color:#d2a8ff;} .o{color:#6e7681;} .ok{color:#56d364;}
+</style>
+</head>
+<body>
+  <div class="glow"></div><div class="glow2"></div>
+  <div class="wrap">
+    <div class="left">
+      <div class="badge"><span class="dot"></span>Open Source · MIT</div>
+      <div class="title"><span class="accent">linkedin</span>-dl<span class="cur"></span></div>
+      <div class="tag">The yt-dlp that <span class="hl">actually works</span> on LinkedIn</div>
+      <div class="sub">Download LinkedIn post videos from the CLI.<br>Beats HTTP 451 &amp; signed HLS. YouTube / Vimeo / X too.</div>
+    </div>
+    <div class="right">
+      <div class="terminal">
+        <div class="tbar"><span class="tb r"></span><span class="tb y"></span><span class="tb g"></span><span class="tt">bash</span></div>
+        <div class="tbody">
+          <div><span class="p">$</span> <span class="c">python download_video.py</span> <span class="f">"&lt;url&gt;"</span></div>
+          <div class="o">[1/3] fetching post with cookies...</div>
+          <div class="o">[2/3] found signed HLS master</div>
+          <div class="o">[3/3] yt-dlp downloading...</div>
+          <div><span class="ok">[OK] done &check;</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

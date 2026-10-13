@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="assets/banner.png" alt="linkedin-dl" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Leon9407/linkedin-dl/stargazers"><img src="https://img.shields.io/github/stars/Leon9407/linkedin-dl?style=flat&color=4493f8" alt="Stars"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/Leon9407/linkedin-dl?color=56d364" alt="License"></a>
+  <img src="https://img.shields.io/badge/python-3.9%2B-blue" alt="Python">
+  <img src="https://img.shields.io/badge/platform-Windows-0A66C2" alt="Platform">
+  <a href="https://github.com/yt-dlp/yt-dlp"><img src="https://img.shields.io/badge/powered%20by-yt--dlp-ff0000" alt="yt-dlp"></a>
+</p>
+
 # linkedin-dl
 
 **The `yt-dlp` that actually works on LinkedIn.** Download videos from LinkedIn
