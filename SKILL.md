@@ -1,5 +1,5 @@
 ---
-name: linkedin-video-download
+name: linkedin-dl
 description: >-
   Download videos from LinkedIn posts (and other sites that need browser login).
   Use this whenever the user shares a LinkedIn post/feed/activity URL and wants

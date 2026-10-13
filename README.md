@@ -1,7 +1,8 @@
-# linkedin-video-download
+# linkedin-dl
 
-Download videos from LinkedIn posts from the command line — and public videos
-(YouTube / Vimeo / Twitter·X) through the same entry point.
+**The `yt-dlp` that actually works on LinkedIn.** Download videos from LinkedIn
+posts from the command line — and public videos (YouTube / Vimeo / Twitter·X)
+through the same entry point.
 
 LinkedIn makes this surprisingly hard: post pages return **HTTP 451** to anonymous
 requests, and videos are served only as **signed, expiring HLS streams** (no plain
